@@ -1,11 +1,11 @@
 // declaration.d.ts
 declare module '*.scss' {
-  const content: any;
+  const content: Record<string, string>;
   export default content;
 }
 
 // declaration.d.ts
 declare module '*.sass' {
-  const content: any;
+  const content: Record<string, string>;
   export default content;
 }
