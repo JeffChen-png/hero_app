@@ -1,0 +1,45 @@
+@import "variables.sass"
+
+.randomCharacter
+  @extend .FONT_SMAL 
+  display: flex
+  box-shadow: 3px 3px 10px 2px rgb(0 0 0 / 10%)
+
+  .left, .right
+    width: 50%
+    min-height: 15vh
+
+    padding: $PADDING_BASE * 3.5
+    
+  .left
+    background-color: $COLOR_WHITE
+    border: 1px solid $COLOR_WHITE
+
+    .image
+      width: 180px
+      height: auto
+
+      float: left
+      margin-right: $MARGIN_BASE * 3
+
+    .buttons
+      display: flex
+      padding-top: $PADDING_BASE * 1.3 
+      column-gap: $MARGIN_BASE * 3 
+      
+  .right
+    color: white 
+
+    background-color: $COLOR_BLACK
+    border: 1px solid $COLOR_BLACK
+
+    background-image: url("../assets/img/bg_random_character.png")
+    background-repeat: no-repeat
+    background-position: 110% 90%
+    background-size: 30% auto
+
+    .button
+      margin-top: $MARGIN_BASE * 1.7
+  
+  .buttonBackground
+    background-color: $COLOR_RED

@@ -1,15 +1,14 @@
 @import "variables"
 
 .header
+  @extend .FONT_LARGE
+
   display: flex
   justify-content: space-between
+  padding-bottom: $PADDING_BASE * 5
 
-  .text .delimeter
-    color: #000000
+  .left *, .right *
+    font-weight: $BOLD
 
   .active
     color: $COLOR_RED
-
-  .delimeter
-    margin-left: $MARGIN_BASE / 2
-    margin-right: $MARGIN_BASE / 2

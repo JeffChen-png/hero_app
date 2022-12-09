@@ -1,0 +1,39 @@
+@import "variables"
+
+button
+  position: relative
+
+  @extend .FONT_SMAL
+  font-weight: $COMMON
+
+  color: white
+  background-color: $COLOR_GRAY
+
+  min-width: 100px
+  height: 38px
+
+  border: none
+  overflow: hidden
+
+  &::after, &::before
+    content: ""
+    position: absolute
+
+    display: block
+
+    border-style: solid
+    border-block-color: transparent
+
+  &::after
+    // transform: rotate(45deg) translate(75%)
+    bottom: 0
+    right: 0
+    border-width: 0 0 10px 10px
+    border-color: $COLOR_RED transparent
+
+  &::before
+    // transform: rotate(45deg) translate(-75%)
+    top: 0
+    left: 0
+    border-width: 10px 10px 0 0 
+    border-color: $COLOR_RED transparent
